@@ -1,16 +1,48 @@
-<!doctype html>
-<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbzWm1LEY_8OR6hUUa3wMx25Spe10BytIztR4xFJB-CsHiOxz9s19xVIct7kQDdo4qUi1g/exec">
-  <title>SIP SATPOL PP - Sistem Informasi Pelaporan Satpol PP</title>
-  <script>
-    window.location.replace('https://script.google.com/macros/s/AKfycbzWm1LEY_8OR6hUUa3wMx25Spe10BytIztR4xFJB-CsHiOxz9s19xVIct7kQDdo4qUi1g/exec');
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIP - SATPOL PP ARU</title>
+  <link rel="icon" href=" https://i.ibb.co/8ntfRfsF/Logo-Satpol.png " type="image/x-icon">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.2rem;
+      color: #666;
+      z-index: 10;
+    }
+  </style>
 </head>
 <body>
-  <p>Membuka SIP SATPOL PP…</p>
-  <p>Jika halaman tidak terbuka otomatis, <a href="https://script.google.com/macros/s/AKfycbzWm1LEY_8OR6hUUa3wMx25Spe10BytIztR4xFJB-CsHiOxz9s19xVIct7kQDdo4qUi1g/exec">buka aplikasi di sini</a>.</p>
+  <div class="iframe-container">
+    <div class="loader" id="loader">Loading app...</div>
+    <iframe 
+      src="https://script.google.com/macros/s/AKfycbzWm1LEY_8OR6hUUa3wMx25Spe10BytIztR4xFJB-CsHiOxz9s19xVIct7kQDdo4qUi1g/exec" 
+      title="SIP SATPOL PP ARU"
+      onload="document.getElementById('loader').style.display='none';"
+      allowfullscreen>
+    </iframe>
+  </div>
 </body>
 </html>
