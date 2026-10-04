@@ -57,7 +57,7 @@
   <main class="iframe-container">
     <div class="loader" id="loader">Memuat aplikasi…</div>
     <iframe
-      src="https://script.google.com/macros/s/AKfycbzWm1LEY_8OR6hUUa3wMx25Spe10BytIztR4xFJB-CsHiOxz9s19xVIct7kQDdo4qUi1g/exec"
+      id="app-frame"
       title="SIP SATPOL PP ARU"
       allowfullscreen
       onload="document.getElementById('loader').hidden = true; document.getElementById('fallback').hidden = true;">
@@ -67,5 +67,9 @@
       <a href="https://script.google.com/macros/s/AKfycbzWm1LEY_8OR6hUUa3wMx25Spe10BytIztR4xFJB-CsHiOxz9s19xVIct7kQDdo4qUi1g/exec" target="_blank" rel="noopener">buka aplikasi langsung</a>.
     </div>
   </main>
+  <script>
+    const appUrl = 'https://script.google.com/macros/s/AKfycbzWm1LEY_8OR6hUUa3wMx25Spe10BytIztR4xFJB-CsHiOxz9s19xVIct7kQDdo4qUi1g/exec';
+    document.getElementById('app-frame').src = appUrl + window.location.search;
+  </script>
 </body>
 </html>
